@@ -1,0 +1,13 @@
+/* Reset do CSS */
+* {
+    margin: 00px;
+    padding: 00px;
+}
+
+h1,p {
+    text-align: center;
+}
+
+header {
+    background-color:paleturquoise
+}
