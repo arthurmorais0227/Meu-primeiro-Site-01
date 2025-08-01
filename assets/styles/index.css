@@ -1,7 +1,7 @@
 /* Reset do CSS */
 * {
     margin: 00px;
-    padding: 00px;
+    padding: 30px;
 }
 
 h1,p {
@@ -9,5 +9,7 @@ h1,p {
 }
 
 header {
-    background-color:paleturquoise
+    background-color:rgb(57, 136, 240);
+    color:azure;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
