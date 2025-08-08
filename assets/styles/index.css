@@ -1,15 +1,50 @@
 /* Reset do CSS */
 * {
-    margin: 00px;
-    padding: 30px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h1,p {
-    text-align: center;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
     background-color:rgb(57, 136, 240);
     color:azure;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    padding: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(240, 248, 255);
+    flex: 1;
+    padding: 48px 38px;
+    width: 100%;
+}
+
+about-section {
+    display: block;
+    background-color: azure;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+#titulo-sobre-mim {
+    font-size: 40px;
+    width: 80%;
+    background-color: azure;
+    border-bottom: 2px solid rgb(12, 94, 187);
+}
+
+.texto-sobre-mim {
+    font-size: px;
+    width: 80%;
+    background-color: azure;
 }
