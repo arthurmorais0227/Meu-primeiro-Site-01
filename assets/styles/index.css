@@ -14,7 +14,7 @@ body {
 
 header {
     background-color:rgb(57, 136, 240);
-    color:azure;
+    color:rgb(252, 252, 252);
     padding: 40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -29,22 +29,64 @@ main {
 
 about-section {
     display: block;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 50;
     padding: 40px;
     border-radius: 12px;
+    margin-bottom: 40px;
 }
 
 #titulo-sobre-mim {
     font-size: 40px;
     width: 80%;
-    background-color: azure;
-    border-bottom: 2px solid rgb(12, 94, 187);
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(43, 129, 228);
+    margin-bottom: 20px;
 }
 
 .texto-sobre-mim {
     font-size: px;
     width: 80%;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
+}
+
+hobbies {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+#titulo-meus-hobbies {
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    border-bottom: 2px solid rgb(43, 129, 228);
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+
+li {
+    background-color: rgb(106, 173, 250);
+    padding: 12px;
+    border-left: 4px solid rgb(43, 129, 228);
+    font-size: 16px;
+    min-width: 250px;
+}
+
+li:hover {
+    background-color: rgb(43, 129, 228);
+    transform: translateX(5px);
+    transition: all 0.5s ease;
 }
