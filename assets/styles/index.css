@@ -1,4 +1,3 @@
-/* Reset do CSS */
 * {
     margin: 0px;
     padding: 0px;
@@ -13,68 +12,51 @@ body {
 }
 
 header {
-    background-color:rgb(57, 136, 240);
-    color:rgb(252, 252, 252);
-    padding: 40px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(57, 136, 240);
+    color: rgb(252, 252, 252);
+    padding: 40px 20px;
     text-align: center;
 }
 
 main {
     background-color: rgb(240, 248, 255);
     flex: 1;
-    padding: 48px 38px;
+    padding: 48px 20px;
     width: 100%;
 }
 
-about-section {
+about-section,
+hobbies,
+contact {
     display: block;
     background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 50;
-    padding: 40px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 40px 20px;
     border-radius: 12px;
-    margin-bottom: 40px;
 }
 
-#titulo-sobre-mim {
-    font-size: 40px;
-    width: 80%;
-    background-color: rgb(255, 255, 255);
+#titulo-sobre-mim,
+#titulo-meus-hobbies {
+    font-size: 2rem;
     border-bottom: 2px solid rgb(43, 129, 228);
     margin-bottom: 20px;
+    padding-bottom: 8px;
 }
 
 .texto-sobre-mim {
-    font-size: px;
-    width: 80%;
-    background-color: rgb(255, 255, 255);
-}
-
-hobbies {
-    display: block;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 50;
-    padding: 40px;
-    border-radius: 12px;
-}
-
-#titulo-meus-hobbies {
-    font-size: 25px;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    border-bottom: 2px solid rgb(43, 129, 228);
-    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 ul {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
+    justify-content: center;
 }
 
 li {
@@ -82,8 +64,9 @@ li {
     padding: 12px;
     border-left: 4px solid rgb(43, 129, 228);
     font-size: 16px;
-    min-width: 250px;
+    min-width: 200px;
     border-radius: 12px;
+    text-align: center;
 }
 
 li:hover {
@@ -92,21 +75,11 @@ li:hover {
     transition: all 0.5s ease;
 }
 
-contact {
-    display: block;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 12px;
-    margin-top: 40px;
-}
-
 contact h2 {
     margin-bottom: 30px;
     font-size: 25px;
     text-align: center;
-    border-bottom:1px solid rgb(43, 129, 228);
+    border-bottom: 1px solid rgb(43, 129, 228);
 }
 
 contact p {
@@ -119,26 +92,76 @@ contact a {
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     border: 2px solid rgb(43, 129, 228);
     border-radius: 25px;
-    transition: all 0.5s ease;    
+    display: inline-block;
+    transition: all 0.5s ease;
 }
 
 contact a:hover {
     background-color: rgb(43, 129, 228);
     color: white;
-    transform: translatey(-2px);
+    transform: translateY(-2px);
 }
 
 footer {
     text-align: center;
     background-color: rgb(43, 129, 228);
     color: white;
-    padding: rem;
+    padding: 20px;
     width: 100%;
 }
 
 footer p {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #titulo-sobre-mim,
+    #titulo-meus-hobbies {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        width: 90%;
+        min-width: unset;
+    }
+
+    contact a {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .texto-sobre-mim,
+    contact p {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
